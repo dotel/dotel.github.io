@@ -1,5 +1,7 @@
+body{
+    text-align: center;
+}
 .header-wrapper{
-    background-color: yellow;
     margin-bottom: 32px;
 }
 
@@ -8,17 +10,17 @@
     background-color: #7DD9E8;
 }
 .header-top{
-    width: 1002px;
+    width: 940px;
     margin: 0 auto;
     height: 100%;
 }
-.header-bottom-wrapper{
+.header__bottom__wrapper{
     height: 38px;
     background-color: #F5F5F5;
 }
-.header-bottom{
+.header__bottom{
     margin: 0 auto;
-    width: 1002px;
+    width: 940px;
     height: 100%;
 }
 
@@ -30,58 +32,189 @@
 
 .section{
     height: 100%;
-    width: 1002px;
+    width: 940px;
     margin: 0 auto;
 }
 
 .left{
     float: left;
-    width: calc(100%  / 4 - 27px);
+    width: 195px;
     height: 601px;
-    background-color: green;
-    margin-right: 27px;
+    background-color: #F5F5F5;
+    margin-right: 25px;
 }
 
 .main{
     float: left;
-    width: calc(3* 100% / 4);
+    width: 718px;
     height: 601px;
 }
 .main-left{
     float: left;
-    width: calc(2* 100%  / 3);
+    width: 516px;
     height: 100%;
-    background-color: purple;
+    text-align: left;
 }
 .main-right{
     float: left;
-    width: calc(100%  / 3 - 27px);
+    width: 177px;
     height: 100%;
-    background-color: pink;
-    margin-left: 27px;
+    background-color: #F5F5F5;
+    margin-left: 25px;
 }
 
 .footer-wrapper{
     background-color: #727272;
     height: 44px;
-    color:white;
 }
 
 .footer{
-    width: 1002px;
+    width: 940px;
     margin: 0 auto;
     height: 100%;
+    font-size: 10px;
+    color:white;
 }
 
 .footer-menu{
     float: left;
     width: 70%;
-    height: 100%;
-    background-color: pink;
+    background-color: red;
+    margin-top: 19px;
+    height: 15px;
 }
 .copyright{
     float: right;
     width: calc(10% - 20px);
-    height: 100% ;
     background-color: rgb(236, 92, 92);
+    margin-top: 19px;
+    height: 15px;
+}
+
+.header__searchform{
+    float:left;
+    width: 338px;
+    background-color: yellow;
+    height: 20px;
+    margin-right: 215px;
+    margin-top: 40px;
+}
+.main-logo{
+    float:left;
+    width: 222px;
+    margin-right:20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 20px;
+}
+
+.header-menus-wrapper{
+    float:left;
+    width: 140px;
+    background-color: rgb(230, 65, 65);
+    height: 20px;
+    margin-top: 30px;
+}
+
+.header__searchform--box{
+    float: left;
+    width: 277px;
+    background-color: green;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.header__searchform--button{
+    float: left;
+    width: 51px;
+    background-color: red;
+    height: 100%;
+}
+.header-menus-username{
+    /* background-color: yellow; */
+}
+
+.header-menus{
+    background-color: red;
+}
+
+.header__bottom--leftmenu{
+    float: left;
+    width: 490px;
+    background-color: green;
+    margin-right: 150px;
+    margin-top: 10px;
+}
+
+.header__bottom--rightmenu{
+    float:left;
+    width: 300px;
+    background-color: yellow;
+    margin-top: 10px;
+}
+
+.left h1, 
+.main-right h1{
+    background-color: #59C2DA;
+    font-size: 16px;
+    height: 42px;
+}
+.sidebar__topnav--searchItems li{
+    list-style: none;
+}
+
+.rightmenu_wrapper{
+    float: right;
+    font-size: 14px;
+}
+
+.rightmenu_wrapper:last-child{
+    margin-right: 38px;
+    color:red;
+}
+
+.rightmenu_wrapper img, .rightmenu_wrapper span, .rightmenu_wrapper p{
+    float: left;
+}
+
+.entries-wrapper--menus{
+    height: 67px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.entry-box-menu{
+    float:left;
+    width: 255px;
+    background-color: #F5F5F5;
+    height: 100%;
+}
+.entry-box-menu:first-child{
+    margin-right: 6px;
+}
+
+.entry{
+    height: 100px;
+    margin-bottom: 20px;
+}
+.entry:not(:first-child){
+    margin-top: 20px;
+}
+
+.entry img{
+    float: left;
+    width: 72px;
+    height: 69px;
+    margin-right: 10px;
+    background-color: rgb(197, 170, 170);
+}
+.entry .description{
+    float: left;
+    background-color: yellow;
+    width: 400px;
+    height: 100%;
+}
+.entry-box-menu .top{
+    height: cals(38px - 2 * 12px);
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
