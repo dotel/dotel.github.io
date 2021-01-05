@@ -148,18 +148,18 @@ body{
     font-size: 16px;
     height: 42px;
 }
-.sidebar__topnav__left{
-    background-color: #ACA0A0;
-}
+
 
 .sidebar__topnav__left--searchItems .item{
-    height: 50px;
+    height: 37px;
+    background-color: gainsboro;
 }
 .sidebar__topnav__left--searchItems li{
     list-style: none;
     background-color: yellow;
-    height: calc(50px - 20px);
+    height: calc(37px - 20px);
     width: calc(100% - 20px);
+    float: left;
     margin: 10px;
 }
 
