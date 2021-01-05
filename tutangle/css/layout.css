@@ -33,13 +33,14 @@ body{
     margin-right: 215px;
     margin-top: 40px;
 }
-.main-logo{
+.logo-box{
     float:left;
     width: 222px;
     margin-right:20px;
     margin-top: 25px;
     margin-bottom: 25px;
-    height: 20px;
+    height: 37px;
+    background-color: red;
 }
 
 .header__top__menuwrapper{
@@ -102,48 +103,52 @@ body{
     float: left;
 }
 
-.section{
+.body{
     height: 606px;
     background-color: white;
     margin-bottom: 35px;
 }
 
-.section-wrapper{
+.body-wrapper{
     height: 100%;
     width: 940px;
     margin: 0 auto;
 }
 
-.left{
+.body__left{
     float: left;
     width: 195px;
     height: 601px;
-    background-color: #F5F5F5;
+    background-color: #bbb5b5;
     margin-right: 25px;
 }
 
-.main{
+.body__right{
     float: left;
     width: 718px;
     height: 601px;
 }
-.main-left{
+.body__right--left{
     float: left;
     width: 516px;
     height: 100%;
     text-align: left;
 }
-.main-right{
+.body__right--left h1{
+    font-size: 25px;
+    height: 28px;
+}
+.body__right--right{
     float: left;
     width: 177px;
     height: 100%;
-    background-color: #F5F5F5;
+    background-color:  #bbb5b5;
     margin-left: 25px;
 }
 
 
-.left h1, 
-.main-right h1{
+.body__left h1, 
+.body__right--right h1{
     background-color: #59C2DA;
     font-size: 16px;
     height: 42px;
@@ -169,9 +174,8 @@ body{
 } */
 
 .entries-wrapper--menus{
-    height: 67px;
+    height: 65px;
     text-align: center;
-    margin-bottom: 15px;
     background-color: yellow;
 }
 .entry-box-menu{
@@ -204,7 +208,7 @@ body{
     float: left;
     background-color: yellow;
     width: 434px;
-    height: 85%;
+    height: calc(100% - 10px);
 }
 .entry-box-menu--top{
     height: calc(38px - 2 * 12px);
