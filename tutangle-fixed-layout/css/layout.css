@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    font-family: muli;
 }
 .header{
     margin-bottom: 32px;
@@ -77,22 +78,18 @@ body{
 .search-button .search-box{
     display: block;
     text-decoration: none;
-    margin: 0 4px;
+    padding: 0 4px;
     padding-top: 4px;
     padding-bottom: 5px;
     text-transform: uppercase;
     background-color: #275056;
     width: 45px;
-    /* position: relative; */
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
     color: #FFF;
-    /* z-index: -10; */
 } 
 
 .header-search-box{
     float: left;
-    width: 100%;
+    /* width: 100%; */
 }
 .header-search-box .leftimage{
     background: url(../slices/searchboxleft.png) top left no-repeat;
@@ -261,7 +258,7 @@ body{
     padding-top: 10px;
     /* float: left; */
     /* margin: 10px; */
-    font-size: 11px;
+    font-size: 12px;
 }
 .sidebar__topnav__left h1, .body__left h1{
     background-color: #59C2DA;
@@ -367,17 +364,9 @@ body{
     height: 28px;
     background-color: #DDDDDD;
 }
-.toggle-menu.active{
-    /* width: 100px; */
-    background-color: #59C2DA;
-    
-}
-.toogle-menu.active .leftimage{
-    background: url(../slices/button-left.png) top left no-repeat;
-}
-
-.toogle-menu.active .rightimage{
-    background: url(../slices/button-right.png) top left no-repeat;
+.toggle-menu.active,
+.toggle-menu:hover{
+    background-color: #59C2DA;   
 }
 
 .toggle-menu .leftimage{
@@ -389,8 +378,20 @@ body{
     /* width: 1000px; */
 }
 
+.toggle-menu.active .leftimage,
+.toogle-menu:hover .leftimage{ 
+    background: url(../slices/button-left.png) top left no-repeat;
+}
 
+.toogle-menu:hover{
+    /* width: ; */
+    width: 400px;
+}
 
+.toggle-menu.active .rightimage,
+.toogle-menu:hover .rightimage{ 
+    background: url(../slices/button-right.png) top right no-repeat;
+}
 
 .toggle-menu a, 
 .toggle-menu a:active{
@@ -402,10 +403,6 @@ body{
     width: 93px;
     margin-left: 10px;
     padding-top: 11px;
-}
-.toggle-menu a:first-child, 
-.toggle-menu a:active:first-child{
-    /* margin-left: 0?; */
 }
 
 .download__item, .hamburger__item{
@@ -444,7 +441,7 @@ body{
 
 .footer-menu{
     float: left;
-    width: 70%;
+    width: 650px;
     margin-top: 19px;
     height: 15px;
     color: white;
@@ -462,5 +459,5 @@ body{
     width: 74px;
     margin-top: 19px;
     height: 15px;
+    font-size: 9px;
 }
-
