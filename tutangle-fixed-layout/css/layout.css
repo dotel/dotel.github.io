@@ -500,13 +500,13 @@ body{
     margin: 10px;
 }
 
-.footer-wrapper{
+.footer{
     height: 44px;
     width: 938px;
     margin: 0 auto;
 }
 
-.footer{
+.footer-wrapper{
     background-color: #727272;
     height: 44px;
     font-size: 10px;
