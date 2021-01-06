@@ -9,6 +9,12 @@ body{
 .header__wrapper--top{
     height: 87px;
     background-color: #7DD9E8;
+    /* width: 938px; */
+    margin: 0 auto;
+    /* position:fixed; */
+    /* z-index:1000; */
+    /* right:0; */
+    /* top:0; */
 }
 .header__top{
     width: 938px; /*final value confirmed */
@@ -18,6 +24,8 @@ body{
 .header__wrapper--bottom{
     height: 38px;
     background-color: #F5F5F5;
+    position: relative;
+    
 }
 .header__bottom{
     margin: 0 auto;
@@ -78,18 +86,19 @@ body{
 .search-button .search-box{
     display: block;
     text-decoration: none;
-    padding: 0 4px;
-    padding-top: 4px;
-    padding-bottom: 5px;
+    margin: 0 4px;
     text-transform: uppercase;
     background-color: #275056;
     width: 45px;
+    height: 20px ;
     color: #FFF;
+    overflow: hidden;
+    line-height: 20px;
 } 
 
 .header-search-box{
     float: left;
-    /* width: 100%; */
+    width: 276px;
 }
 .header-search-box .leftimage{
     background: url(../slices/searchboxleft.png) top left no-repeat;
@@ -132,6 +141,12 @@ body{
     width: 9px;
     margin-right: 0;
 }
+.header-search-box .input-search img{
+    padding-top: 5px;
+}
+.header-search-box .input-remove img{
+    padding-top: 5px;
+}
 
 .header__top__menuwrapper--username{
     margin-bottom: 4px;
@@ -166,6 +181,7 @@ body{
     display: block;
     height: 38px;
 }
+
 .header__bottom--leftmenu a{
     text-decoration: none;
     color: black;
@@ -173,6 +189,9 @@ body{
     height: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.header__bottom--leftmenu li:hover{
+    background-color: white;;
 }
 
 .header__bottom--rightmenu{
@@ -192,11 +211,24 @@ body{
     margin-right: 38px;
 }
 
-.header__bottom__rightmenu_wrapper img, .header__bottom__rightmenu_wrapper span, .header__bottom__rightmenu_wrapper p{
-    float: left;
+.header__bottom__rightmenu_wrapper span, .header__bottom__rightmenu_wrapper span, .header__bottom__rightmenu_wrapper p{
+    float: right;
+    padding-top: 3px;
 }
-.header__bottom__rightmenu_wrapper img{
+.header__bottom__rightmenu_wrapper span{
     margin-right: 10px;
+}
+
+.header__bottom__rightmenu_wrapper span.menuimage{
+    width: 17px;
+    height: 16px;
+}
+.header__bottom__rightmenu_wrapper span.menuimage.person{
+    background: url(../slices/smallperson.png) top right no-repeat;
+}
+
+.header__bottom__rightmenu_wrapper span.menuimage.box{
+    background: url(../slices/smallbox.png) top right no-repeat;
 }
 
 .body{
@@ -250,7 +282,9 @@ body{
     text-align: left;    
 } */
 
-
+/* .download__item:first-child + .download__item{
+    margin-bottom: 0;
+} */
 
 .sidebar__topnav__left--searchItems li{
     list-style: none;
@@ -311,12 +345,6 @@ body{
     margin-left: 2px;
 }
 
-/* .entry-box-menu-left{
-    width: 10px;
-    height: 100;
-    background: url(../slices/all-entries-left.png) top right no-repeat;
-} */
-
 .entry{
     height: 100px;
     background-color: white;
@@ -342,6 +370,25 @@ body{
     width: 434px;
     height: 90px;
 }
+.entry .description .invite{
+    color: #df6347;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.entry .description .subscribed{
+    color:green;
+}
+
+.entry .description p{
+    font-size: 14px;
+}
+
+.entry .description .newentrycomment{
+    font-size: 12px;
+    color: #59C2DA;
+    font-weight: 900;
+    text-transform: uppercase;
+}
 .entry-box-menu__top{
     padding-top: 14px;
     height: 23px;
@@ -366,7 +413,7 @@ body{
 }
 .toggle-menu.active,
 .toggle-menu:hover{
-    background-color: #59C2DA;   
+    background-color: #2dc2d6;   
 }
 
 .toggle-menu .leftimage{
@@ -379,7 +426,7 @@ body{
 }
 
 .toggle-menu.active .leftimage,
-.toogle-menu:hover .leftimage{ 
+.toggle-menu .leftimage:hover{ 
     background: url(../slices/button-left.png) top left no-repeat;
 }
 
@@ -389,7 +436,7 @@ body{
 }
 
 .toggle-menu.active .rightimage,
-.toogle-menu:hover .rightimage{ 
+.toggle-menu .rightimage:hover{ 
     background: url(../slices/button-right.png) top right no-repeat;
 }
 
@@ -421,23 +468,33 @@ body{
     text-decoration: none;
     color: black;
 }
+.download__item:first-child + .download__item{ /****************************************************************************/
+    margin-bottom: 0;
+}
+
+.hamburger__item:hover, .download__item:hover{
+    background-color: white;
+}
 .hamburger__item img, .download__item img{
     float: right;
     margin: 10px;
 }
 
+.footer-wrapper{
+    height: 44px;
+    width: 938px;
+    margin: 0 auto;
+}
+
 .footer{
     background-color: #727272;
     height: 44px;
-}
-
-.footer-wrapper{
-    width: 938px;
-    margin: 0 auto;
-    height: 100%;
     font-size: 10px;
     color:white;
+    margin: 0;
+    width: 100%;
 }
+
 
 .footer-menu{
     float: left;
