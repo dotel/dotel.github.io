@@ -55,6 +55,10 @@ body{
     margin-top: 26px;
     height: 33px;
 }
+.header-rightmenu-wrapper a{
+    text-decoration: none;
+    color: black;
+}
 
 .searchbox-wrapper{
     float: left;
