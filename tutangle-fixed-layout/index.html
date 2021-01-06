@@ -12,16 +12,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <div class="main-wrapper">
         <div class="header">
-                <div class="header__wrapper--top">
-                    <div class="header__top">
+                <div class="top-wrapper">
+                    <div class="header-top">
                         <div class= "logo-box">
                             <img src="./slices/logo.png" alt="">
                         </div>
-                        <div class="header__top__searchform">
-                            <div class="header__top__searchform--box">
-                                <div class="header-search-box">
+                        <div class="searcharea-wrapper">
+                            <div class="searchbox-wrapper">
+                                <div class="searchbox">
                                     <div class="leftimage">
                                         <div class="rightimage">
                                             <div class="box">
@@ -33,17 +32,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="search-button">
-                                <div class="leftimage">
-                                    <div class="rightimage">
-                                        <a href="#" class="search-box">Search</a>
-                                    </div>
-                                </div> 
-                            </div>
+                            <a href= "#" class="search-button">
+                                <span class="leftimage"></span>
+                                <span class="text">Search</span>
+                                <span class="rightimage"></span>
+                            </a>
                         </div>
-                        <div class="header__top__menuwrapper">
-                            <div class="header__top__menuwrapper--username">Joe Burros</div>
-                            <div class="header__top__menuwrapper--othermenu">
+                        <div class="header-rightmenu-wrapper">
+                            <div class="username">Joe Burros</div>
+                            <div class="menu">
                                 <ul>
                                     <li>Home | &nbsp;</li>
                                     <li>Settings | &nbsp;</li>
@@ -53,21 +50,21 @@
                         </div>
                     </div>  
                 </div>
-                <div class="header__wrapper--bottom">
-                    <div class="header__bottom">
-                            <ul class="header__bottom--leftmenu">
+                <div class="bottom-wrapper">
+                    <div class="header-bottom">
+                            <ul class="leftmenu">
                                 <li><a href="#">Create New Entry</a></li>
                                 <li><a href="#">My Topic Boxes</a></li>
                                 <li><a href="#">Friends</a></li>
                                 <li><a href="#">Invite new members</a></li>
                             </ul>
-                        <div class="header__bottom--rightmenu">
-                            <div class="header__bottom__rightmenu_wrapper">
+                        <div class="rightmenu-wrapper">
+                            <div class="rightmenu">
                                 <span class="inviteCount">1</span>
                                 <p>Friend Requests -&nbsp; </p>
                                 <span class="menuimage person"></span>
                             </div>
-                            <div class="header__bottom__rightmenu_wrapper">
+                            <div class="rightmenu">
                                 <span class="inviteCount">1</span>
                                 <p>Topic Boxes Invites -&nbsp; </p>
                                 <span class="menuimage box"></span>
@@ -79,14 +76,14 @@
         
         <div class="body">
             <div class="body-wrapper">
-                <div class="body__left">
+                <div class="body-left">
                     <div class="recent-searches">
                         <h1>Recent searches</h1>
-                            <div class="download__item">
+                            <div class="download-item">
                                 <a href="#">Nick cave and the Bad seeds</a>
                                 <img src="./slices/downloadbutton.png" alt="img">
                             </div>
-                            <div class="download__item">
+                            <div class="download-item">
                                 <a href="#">African Animals</a>
                                 <img src="./slices/downloadbutton.png" alt="img">
                             </div>
@@ -94,28 +91,26 @@
                     </div>
                     <div class="recent-searches">
                         <h1>Recent searches</h1>
-                        <div class="sidebar__bottomnav--searchItems">
-                            <div class="hamburger__item">
-                                <a href="#">Music</a>
-                                <img src="./slices/hamburger.png" alt="img">
-                            </div>
-                            <div class="hamburger__item">
-                                <a href="#">Whatever</a>
-                                <img src="./slices/hamburger.png" alt="img">
-                            </div>
+                        <div class="hamburger-item">
+                            <a href="#">Music</a>
+                            <img src="./slices/hamburger.png" alt="img">
+                        </div>
+                        <div class="hamburger-item">
+                            <a href="#">Whatever</a>
+                            <img src="./slices/hamburger.png" alt="img">
                         </div>
                     </div>
                 </div>
-                <div class="body__right">
-                    <div class="body__right--left">
+                <div class="body-right">
+                    <div class="left">
                         <h1>Entries</h1>
                         <div class="entries-wrapper">
-                                <div class="entries-wrapper-menus-left">
-                                    <div class="entries-wrapper-menus-right">
-                                        <div class="entries-wrapper-menus-center">
+                                <div class="image-left">
+                                    <div class="image-right">
+                                        <div class="center">
                                             <div class="entry-box-menu">
-                                                <div class="entry-box-menu__top">All entries</div>
-                                                <div class="entry-box-menu__bottom">
+                                                <div class="top">All entries</div>
+                                                <div class="bottom">
                                                     <div class="toggle-menu active">
                                                             <div class="leftimage">
                                                                 <div class="rightimage">
@@ -133,8 +128,8 @@
                                                 </div>
                                             </div>
                                             <div class="entry-box-menu">
-                                                <div class="entry-box-menu__top">Subscribed</div>
-                                                <div class="entry-box-menu__bottom toright">
+                                                <div class="top">Subscribed</div>
+                                                <div class="bottom toright">
                                                     <div class="toggle-menu">
                                                         <div class="leftimage">
                                                             <div class="rightimage">
@@ -214,10 +209,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="body__right--right">
-                        <div class="sidebar__topnav__left">
+                    <div class="right">
+                        <div class="videonav-wrapper">
                             <h1>Video tutorials</h1>
-                            <ul class="sidebar__topnav__left--searchItems">
+                            <ul class="videonav">
                                 <li><a href="#">Overview of Tutangle</a></li>
                                 <li><a href="#">Searching the site</a></li>
                                 <li><a href="#">Previous & Saved items</a></li>
@@ -229,8 +224,8 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="footer-wrapper">
+        <div class="footer-wrapper">
+            <div class="footer">
                 <div class="footer-menu">
                     <ul>
                         <li>About us</li>
@@ -242,7 +237,6 @@
                 </div>
                 <div class="copyright">@ TuTangle 2013</div>
             </div>
-        </div>
-    </div>       
+        </div>    
 </body>
 </html>
