@@ -6,15 +6,15 @@ body{
     margin-bottom: 32px;
 }
 
+.main-wrapper{
+    min-width: 938px;
+}
 .header__wrapper--top{
     height: 87px;
     background-color: #7DD9E8;
-    /* width: 938px; */
     margin: 0 auto;
     /* position:fixed; */
-    /* z-index:1000; */
-    /* right:0; */
-    /* top:0; */
+    min-width: 938px;
 }
 .header__top{
     width: 938px; /*final value confirmed */
@@ -25,6 +25,7 @@ body{
     height: 38px;
     background-color: #F5F5F5;
     position: relative;
+    min-width: 938px;
     
 }
 .header__bottom{
@@ -191,8 +192,12 @@ body{
     padding-bottom: 10px;
 }
 .header__bottom--leftmenu li:hover{
-    background-color: white;;
+    background-color: white;
 }
+.header__bottom--leftmenu li a:hover{
+    color: #2dc2d6;
+}
+
 
 .header__bottom--rightmenu{
     float: right;
@@ -290,9 +295,15 @@ body{
     list-style: none;
     height: 24.5px;
     padding-top: 10px;
-    /* float: left; */
-    /* margin: 10px; */
     font-size: 12px;
+}
+.sidebar__topnav__left--searchItems li a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar__topnav__left--searchItems li a:hover{
+    background-color: #fff;
+    color: #59C2DA;
 }
 .sidebar__topnav__left h1, .body__left h1{
     background-color: #59C2DA;
@@ -475,6 +486,9 @@ body{
 .hamburger__item:hover, .download__item:hover{
     background-color: white;
 }
+.hamburger__item a:hover, .download__item a:hover{
+    color: #2dc2d6;
+}
 .hamburger__item img, .download__item img{
     float: right;
     margin: 10px;
@@ -492,7 +506,7 @@ body{
     font-size: 10px;
     color:white;
     margin: 0;
-    width: 100%;
+    min-width: 938px;
 }
 
 
