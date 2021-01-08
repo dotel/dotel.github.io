@@ -1,0 +1,35 @@
+.body-right{
+    width: 96%;
+}
+.body-right .left{
+    width: 75%;
+    margin-right: 5%;
+}
+.body-right .right{
+    width: 20%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* .entry-box-menu{
+    margin-right: 1.36612021857%;
+}
+.entry-box-menu:first-child + .entry-box-menu{
+    margin-right:1.36612021857%;
+} */
+
+.header-bottom .leftmenu{
+    /* display: block; */
+    width: 57%;
+    /* font-size: 14px; */
+}
+
+.header-bottom .rightmenu-wrapper{
+    width: 40%;
+}
+.header-bottom .leftmenu{
+    width: 57%;
+}
+.rightmenu-wrapper .rightmenu{
+    display: block;
+}

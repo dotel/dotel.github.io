@@ -1,0 +1,53 @@
+body{
+    /* background-color: red; */
+}
+.body-left{
+    display: block;
+}
+.body-right{
+    width: 74.947807933%; /* final value */
+    padding: 0;
+}
+.body-right .left{
+    width: 72.14484679%;
+    margin-right: 0;
+}
+
+.toggle-menu{
+    display: block;
+}
+
+.search-button{
+    display: block;
+}
+
+.top-wrapper{
+    height: 87px;
+}
+
+.searcharea-wrapper{
+    margin-top: 40px;
+    float: left;
+    /* margin-left: 0; */
+}
+.searchbox-wrapper{
+    margin-left: 0;
+}
+
+#nomobile{
+    display: block;
+}
+
+.body-right .right{
+    float: left;
+    width: 24.512534818941%; /* final value */
+    margin-left: 3.34261838440111%; /* final valu */
+}
+
+.header-rightmenu-wrapper{
+    display: block;
+}
+
+.entry-box-menu{
+    width: 47.87644787644788%;
+}
