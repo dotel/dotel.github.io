@@ -246,18 +246,15 @@ body{
 
 
 .header-bottom a.icon, .header-bottom a.icon:hover{
-    background-position-y: 18px;
+    background-position-y: 6px;
     background-size: 26px 26px;
 }
 
 .header-bottom:hover + .hero{
-    /* margin-bottom: -40px; */
     display: none;
 }
 
-.header-bottom a:hover{
-    color: #701dbb;
-}
+
 .header-bottom li:hover + li{
     border-left: 0;
 }
@@ -270,10 +267,20 @@ body{
     font-size: 17px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 62px;
+    padding-top: 47px;
+    margin-top: 8px;
     padding-bottom: 33px;
-
 }
+
+
+.header-bottom a:hover{
+    color: #701dbb;
+}
+
+.header-bottom a:hover .hero{
+    margin-top: 100px;
+}
+
 
 .hero{
     transform: translateY(-13px);
@@ -311,7 +318,7 @@ body{
 
 .hero-left{
     background: url(../images/girl.png) no-repeat left top;
-
+    margin-right: -10000px;
     width: 30%;
 }
 
@@ -619,7 +626,7 @@ body{
     color: #949494;
 }
 .footer-wrapper{
-    border-top: 29px solid #904dd0;
+    border-top: 4px solid #904dd0;
     content: "";
     display: table;
     clear: both;
@@ -711,6 +718,7 @@ body{
     clear: both;
     padding-top: 40px;
     color: #fff;
+    width: 83.643122676579%;
     padding-bottom: 50px;
 }
 
@@ -736,7 +744,7 @@ body{
     width: 80.8510638297%;
 }
 .footer-top .right .menu-bottom .item{
-    padding-left: 10px;
+    padding-left: 35px;
 }
 .footer-top .right .menu-bottom .item:first-child{
     padding-left: 0;
@@ -747,6 +755,7 @@ body{
     height: 10px;
     padding-right: 6px;
 }
+
 
 .dot {
     height: 10px;
