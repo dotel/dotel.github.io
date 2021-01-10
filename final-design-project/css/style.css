@@ -162,6 +162,9 @@ body{
     background-color: #fff;
 }
 
+.header-bottom{
+    /* max-height: 120px; */
+}
 
 .header-bottom::after{
   content: "";
@@ -176,6 +179,7 @@ body{
     background-color: #fff;
     background: linear-gradient(#fff, rgb(228, 228, 228));
     border-bottom: 5px solid #8038c2;
+    /* padding-top: 40px; */
 }
 .header-bottom li:not(:first-child){
     border-left: 1px solid #d4d4d4;
@@ -246,6 +250,11 @@ body{
     background-size: 26px 26px;
 }
 
+.header-bottom:hover + .hero{
+    /* margin-bottom: -40px; */
+    display: none;
+}
+
 .header-bottom a:hover{
     color: #701dbb;
 }
@@ -272,16 +281,16 @@ body{
     height: 538px;
     background-repeat: repeat-y;
     z-index: 8;
-    background: linear-gradient(#642b69, #642b69);
     margin-bottom: -13px;
 }
+
 
 
 .purple-circle{
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 2;
+    z-index: 200;
     transform: translateX(-50%);
 }
 
@@ -296,19 +305,28 @@ body{
     position: absolute;
     top: 57%;
     left: 50%;
-    z-index: 3;
+    z-index: 300;
     transform: translateX(-50%);
 }
 
 .hero-left{
-    background: url(../images/girl.png) no-repeat;
+    background: url(../images/girl.png) no-repeat left top;
+
     width: 30%;
 }
+
 .hero-right{
-    background: url(../images/hero-image.png) no-repeat;
+    background: url(../images/hero-image.png) no-repeat left;
     width: 70%;
 }
 
+.hero-left::after, .hero-right::after{
+    content: "";
+    background: rgba(69, 26, 74, .7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
 
 .body-top{
     content: "";
@@ -554,7 +572,7 @@ body{
 }
 
 .body-bottom .textarea{
-    margin-top: 90px;
+    margin-top: 46px;
 }
 
 .body-bottom .textarea .top{
@@ -730,4 +748,25 @@ body{
     padding-right: 6px;
 }
 
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #979797;
+    /* margin-right: 7px; */
+    margin: 0 3.5px;
+    border-radius: 50%;
+    display: inline-block;
+  }
 
+.threedots a:first-child .dot{
+    background-color: #8f33c4;   
+}
+
+.threedots a:hover .dot{
+    background-color: #8f33c4;
+}
+
+.threedots{
+    padding-top: 37px;
+    text-align: center;
+}
