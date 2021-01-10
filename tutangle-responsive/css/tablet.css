@@ -11,9 +11,12 @@
     margin-left: 0;
 }
 
-/* .entry-box-menu{
-    margin-right: 1.36612021857%;
+.entries-wrapper .center{
+    /* margin: 0 auto; */
+    width: 96.13899613899%;
 }
+
+/*
 .entry-box-menu:first-child + .entry-box-menu{
     margin-right:1.36612021857%;
 } */

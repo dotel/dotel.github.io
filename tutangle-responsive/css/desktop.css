@@ -9,7 +9,7 @@ body{
     padding: 0;
 }
 .body-right .left{
-    width: 72.14484679%;
+    width: 72.14484679665738%;
     margin-right: 0;
 }
 
@@ -46,8 +46,4 @@ body{
 
 .header-rightmenu-wrapper{
     display: block;
-}
-
-.entry-box-menu{
-    width: 47.87644787644788%;
 }
