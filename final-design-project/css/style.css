@@ -30,6 +30,9 @@ body{
     color: #6017a3;
     font-family: 'Nexa Black', sans-serif;
 }
+.logo-box .title a{
+    text-decoration: none;
+}
 .page-description{
     font-size: 12px;
     color: #7d7d7d;
@@ -279,8 +282,8 @@ body{
     margin: 0 auto;
     text-align: center;
     padding-top: 47px;
-    margin-top: 8px;
     padding-bottom: 33px;
+    margin-top: 8px;
 }
 
 
@@ -386,7 +389,7 @@ body{
     margin-top: calc(50px + 23px);
     text-align: center;
     color: #fff;
-    font-size: 36px;
+    font-size: 30px;
     font-family: 'Nexa Book';
 }
 
@@ -513,13 +516,14 @@ body{
 .bigmonitor .text .title{
     color: white;
     margin-bottom: 22px;
-    font-size: 36px;
+    font-size: 24px;
     border-top: 5px solid #7d7d7d;
     border-bottom: 5px solid #7d7d7d;
     padding: 10px 0;
     width: 100%;
     font-family: 'Nexa Book';
 }
+
 
 
 .bigmonitor .text .subtitle{
@@ -765,7 +769,7 @@ body{
 .footer-top .right .menu-bottom .item img{
     width: 10px;
     height: 10px;
-    padding-right: 16px;
+    padding-right: 10px;
 }
 
 

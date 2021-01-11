@@ -80,7 +80,9 @@
     width: 49.06621392190%;
 }
 
-
+.body-top h2{
+    font-size: 36px;
+}
 
 .header-bottom{
     margin-top: 0;
@@ -135,6 +137,7 @@
     border: 0;
     padding:  0;
     width: auto;
+    font-size: 36px;
 }
 
 .body-top .features .details{
@@ -189,6 +192,10 @@
 
 .body-top .features .details p{
     display: block;
+}
+
+.body-top .features h1{
+    font-size: 24px;
 }
 
 .body-top .feature .knowmorebutton{
