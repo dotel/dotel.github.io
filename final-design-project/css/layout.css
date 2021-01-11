@@ -53,11 +53,11 @@
 }
 
 .footer-top .left{
-    width: calc(53800/940 * 1%);
+    width: calc(54500/940 * 1%);
 }
 
 .footer-top .right{
-    width: calc(40200/940 * 1%);
+    width: calc(39500/940 * 1%);
 }
 .footer-bottom{
     margin: 0 auto;

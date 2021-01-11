@@ -1,0 +1,251 @@
+
+@media screen and (min-width: 813px){
+    .mappin1, .mappin2{
+        display: block;
+    }
+    .maplines{
+        width: 785px;
+        margin: 0 auto;
+        display: block;
+        background: url(../images/map.png) center no-repeat;
+        background-size: contain;
+    } 
+    .body-top .map{
+        /* width: 63.2903225806vw; */
+        position: relative;
+    }
+    .body-top .mappin1{
+        height: 50px;
+        position: absolute;
+        left: 58.2%;
+        top: 15%;
+    }
+    .body-top .mappin2{
+        height: 50px;
+        position: absolute;
+        left: 60.5%;
+        top: 8%;
+    }
+    
+    .body-bottom .left-line{
+        margin-right: 4.787234%;
+    }
+}
+
+
+
+
+.header-bottom li{
+    width: calc((100% - 20px - 6px)/3 );
+    margin-right: 10px;
+}
+.header-bottom li:nth-child(3), .header-bottom li:last-child{
+    margin-right: 0;
+}
+
+.hero{
+    transform: translateY(-23px);
+}
+
+
+
+.logo-box{
+    width: 26.5674814027630%;
+}
+.right-menus{
+    width: 62.6595744680%;
+}
+.header-top .title{
+    position: absolute;
+    left: 60px;
+}
+
+.right-menus .item{
+    margin-right: 18px;
+    width: auto;
+}
+
+.right-menus .text{
+    padding-right: 38px;
+    /* color: #fff; */
+    /* width: 100%; */
+    width: auto;
+}
+
+.right-menus .item:first-child{
+    width: 32.52595155709343%;
+}
+.right-menus .left{
+    right: auto;
+    width: 49.06621392190%;
+}
+
+
+
+.header-bottom{
+    margin-top: 0;
+    position: static;
+}
+.right-menus .separator{
+    float: left;
+    margin-right: 10px;
+}
+
+.map{
+    margin-bottom: 15px;
+}
+
+.body-top .icons img:not(:last-child){
+    margin-right: 6%;
+}
+.right-menus .search-box{
+    float: right;
+    position: static;
+    width: 47.5382003395%;
+}
+
+.body-bottom h3{
+    transform: translateX(-5%);
+}
+.body-bottom .textarea .item-wrapper{
+    width: calc((100% - 20px) / 2);
+
+}
+
+.body-bottom .textarea .item-wrapper:first-child{
+    margin-bottom: 0;
+}
+
+
+.body-middle-wrapper{
+    background-color: #222222;
+}
+
+.body-middle .bigmonitor{
+    height: 468px;
+    width: 80.9677419354vw;
+    max-width: 1255px;
+    background: url(../images/monitor.png) no-repeat top left;
+    background-size: 80.9677419354vw 468px;
+    background-position: center;
+    position: relative;
+}
+
+.bigmonitor .text .title{
+    border: 0;
+    padding:  0;
+    width: auto;
+}
+
+.body-top .features .details{
+    padding-bottom: 106px;
+}
+
+.body-top .icons .rect-lines {
+    transform: translateY(-25px);
+}
+
+
+
+
+.body-bottom .left-line, .body-bottom .right-line, .body-bottom h2{
+    float: left;
+    padding-top: 82px;
+}
+.body-bottom .right-line{
+    float: right;
+}
+.body-bottom .left-line, .body-bottom .right-line{
+    display: block;
+    width: 23.404255319148%;
+}
+
+
+.body-bottom .left-line{
+    margin-right: 5.2%;
+}
+
+.body-bottom .left-line img,
+.body-bottom .right-line img{
+    max-width: 100%;
+}
+.body-bottom .right-line{
+    text-align: right;
+}
+
+.bigmonitorwrapper{
+    display: block;
+    padding-top: 54px;
+    width: 80.9677419354vw;
+    height: 468px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.body-bottom .memberphotos .item{
+    width: 23.9%;
+}
+
+.body-top .features .details p{
+    display: block;
+}
+
+.body-top .feature .knowmorebutton{
+    display: none;
+}
+
+.footer-top .right .menu-bottom{
+    width: 74.62686567164%;
+}
+
+.footer-top .right .menu-bottom .item{
+    padding-left: 7.8%;
+    width: auto;
+}
+
+.footer-top .right .menu-bottom{
+    content: "";
+    display: table;
+    /* width: 74.62686567164%; */
+    width: 100%;
+    clear: both;
+    padding-top: 37px;
+}
+
+
+.footer-top .right .menu-top .verticalbar{
+    display: inline;
+}
+
+.footer-top .right .menu-top a:hover{
+    border-bottom: 3px solid #6017a3;
+}
+
+
+.footer-top .right .menu-top li{
+    width: auto;
+}
+.footer-top .right .menu-bottom .item img{
+    padding-right: 6px;
+}
+
+
+
+.footer-top .right .menu-top{
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+    float: right;
+    height: 34px;
+}
+
+
+
+@media screen and (min-width: 740px){
+    .body-bottom h2{
+        font-size: 28px;
+    }
+
+}

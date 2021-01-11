@@ -1,0 +1,81 @@
+    .body-bottom h2{
+        font-size: 36px;
+    }
+   
+    .header-top .title{
+    position:static;
+}
+.header-bottom li{
+    width: calc(100%/6 - 1px);
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+
+.hero{
+    transform: translateY(-13px);
+}
+
+.overlap-twitter{
+   
+}
+
+.header-bottom li:hover{
+    background: #fff;
+    transform: translateY(-8px);
+    border-bottom: 13px solid #701dbb;
+    border-left: 0;
+    border-right: 0;
+    width: calc(100/6 * 1% - 1px);
+}
+
+.maplines{
+    width: 985px;
+    margin: 0 auto;
+    display: block;
+    background: url(../images/map.png) top left no-repeat;
+    padding-bottom: 35px;
+}
+
+.body-top .map{
+    /* width: 63.2903225806vw; */
+    position: relative;
+}
+.body-top .mappin1{
+    height: 70px;
+    position: absolute;
+    left: 59.42622950819%;
+    top: 9.09090909090909%;
+}
+.body-top .mappin2{
+    height: 70px;
+    position: absolute;
+    left: 62.5%;
+    top: 0;
+}
+.body-bottom .memberphotos .item{
+    width: 24.3697478991596%;
+    margin-bottom: 0;
+}
+
+.body-top .icons img:not(:last-child){
+    margin-right: 6.5248226950354%;
+}
+
+.body-top .icons .rect-lines{
+    transform: translateY(-30px);
+}
+
+
+
+.footer-top .right .menu-bottom .item{
+    padding-left: 8.706467661691%;
+}
+
+.body-bottom .left-line{
+    margin-right: 5.787234%;
+}
+
+.body-bottom h3{
+    transform: translateX(0);
+}
