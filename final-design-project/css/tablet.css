@@ -1,5 +1,10 @@
 
 @media screen and (min-width: 813px){
+    .right-menus .search-box{
+        float: right;
+        position: static;
+        width: 47.5382003395%;
+    }
     .mappin1, .mappin2{
         display: block;
     }
@@ -30,6 +35,34 @@
     .body-bottom .left-line{
         margin-right: 4.787234%;
     }
+    .right-menus{
+        width: 62.6595744680%;
+    }
+    .right-menus .left{
+        right: auto;
+        width: 49.06621392190%;
+    }
+
+        
+    .right-menus .item{
+        margin-right: 18px;
+        width: auto;
+    }
+
+    .right-menus .text{
+        padding-right: 38px;
+        width: auto;
+    }
+
+    .right-menus .item:first-child{
+        width: 32.52595155709343%;
+    }
+
+    .header-bottom{
+        margin-top: 0;
+        position: static;
+        height: 100px;
+    }
 }
 
 
@@ -43,51 +76,24 @@
     margin-right: 0;
 }
 
-.hero{
-    transform: translateY(-23px);
-}
 
 
 
 .logo-box{
     width: 26.5674814027630%;
 }
-.right-menus{
-    width: 62.6595744680%;
-}
+
 .header-top .title{
     position: absolute;
-    left: 60px;
+    left: 70px;
 }
 
-.right-menus .item{
-    margin-right: 18px;
-    width: auto;
-}
-
-.right-menus .text{
-    padding-right: 38px;
-    /* color: #fff; */
-    /* width: 100%; */
-    width: auto;
-}
-
-.right-menus .item:first-child{
-    width: 32.52595155709343%;
-}
-.right-menus .left{
-    right: auto;
-    width: 49.06621392190%;
-}
 
 .body-top h2{
     font-size: 36px;
 }
 
-.header-bottom{
-    margin-top: 0;
-    position: static;
-}
+
 .right-menus .separator{
     float: left;
     margin-right: 10px;
@@ -100,11 +106,7 @@
 .body-top .icons img:not(:last-child){
     margin-right: 6%;
 }
-.right-menus .search-box{
-    float: right;
-    position: static;
-    width: 47.5382003395%;
-}
+
 
 .body-bottom h3{
     transform: translateX(-5%);
@@ -124,21 +126,25 @@
 }
 
 .body-middle .bigmonitor{
-    height: 468px;
-    width: 80.9677419354vw;
+    height: 24.4vw;
     max-width: 1255px;
-    background: url(../images/monitor.png) no-repeat top left;
-    background-size: 80.9677419354vw 468px;
-    background-position: center;
-    position: relative;
+    background: url(../images/monitor.png) no-repeat bottom center;
+    background-size: 90% 24.4vw;
+    margin: 0 auto;
+    padding-top: 54px;
 }
+
+
 
 .bigmonitor .text .title{
     border: 0;
     padding:  0;
     width: auto;
-    font-size: 36px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
+
+
 
 .body-top .features .details{
     padding-bottom: 106px;
@@ -176,15 +182,7 @@
     text-align: right;
 }
 
-.bigmonitorwrapper{
-    display: block;
-    padding-top: 54px;
-    width: 80.9677419354vw;
-    height: 468px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
+
 
 .body-bottom .memberphotos .item{
     width: 23.9%;
