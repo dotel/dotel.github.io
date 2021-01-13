@@ -5,6 +5,10 @@
 .header-top .title{
     position:static;
 }
+
+.header-bottom{
+    height: 113px;
+}
 .header-bottom li{
     width: calc(100%/6 - 1px);
     margin-bottom: 0;
