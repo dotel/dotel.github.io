@@ -54,6 +54,7 @@
 
 .footer-top .left{
     width: calc(54500/940 * 1%);
+    float: left;
 }
 
 .footer-top .right{

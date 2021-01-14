@@ -35,6 +35,7 @@ body{
     font-size: 12px;
     color: #7d7d7d;
     font-family: 'PT Sans', sans-serif;
+    font-style: italic;
 }
 .logo-box{
     float: left;
@@ -193,9 +194,7 @@ body{
     border-left: 1px solid #d4d4d4;
 }
 
-.header-bottom a{
-    font-family: 'PT Sans', sans-serif;
-}
+
 
 
 .header-bottom a.travelguide{
@@ -269,6 +268,8 @@ body{
     padding-top: 47px;
     padding-bottom: 33px;
     margin-top: 8px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
 }
 
 
@@ -361,6 +362,8 @@ body{
     font-size: 20px;
     font-family: 'Nexa Book';
     margin-right: 4.7872340425531%;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .body-bottom h3{
@@ -372,12 +375,14 @@ body{
 
 
 .body-top h2{
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     margin-top: calc(50px + 23px);
     text-align: center;
     color: #fff;
     font-size: 30px;
     font-family: 'Nexa Book';
+    font-weight: normal;
+    font-style: normal;
 }
 
 .body-top .description{
@@ -385,6 +390,8 @@ body{
     color: #835cc6;
     margin-bottom: 25px;
     font-family: 'Nexa Bold';
+    font-style: normal;
+    font-weight: normal;
     font-size: 14px;
 }
 
@@ -400,8 +407,10 @@ body{
 .feature h1{
     text-align: center;
     font-size: 24px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     font-family: 'Nexa Book';
+    font-weight: normal;
+    font-style: normal;
 }
 .feature p{
     font-size: 12px;
@@ -461,6 +470,7 @@ body{
 .body-top .features .details p{
     display: none;
     font-family: 'Arial', sans-serif;
+    line-height: 23px;
 }
 
 .body-top .feature .knowmorebutton{
@@ -549,6 +559,7 @@ body{
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     color: #7b7b7b;
+    font-weight: 700;
 }
 
 .memberphotos .item .job{
@@ -615,11 +626,13 @@ body{
     margin-bottom: 45px;
     color: #6017a3;
     font-size: 14px;
+    line-height: 26.5px;
 }
 .textarea .item .description{
     margin-bottom: 99px;
     font-size: 12px;
     color: #949494;
+    line-height: 23px;
 }
 .footer-wrapper{
     border-top: 4px solid #904dd0;
@@ -646,7 +659,7 @@ body{
 
 .footer-top .right .menu-top li{
     float: left;
-    padding-right: 10px;
+    padding-right: 14px;
     width: 100%;
 }
 .footer-top .right .menu-top a{
@@ -668,7 +681,8 @@ body{
 }
 
 
-.footer-top .left{
+.footer-top .left .description, .footer-top .left ul{
+    line-height: 23.5px;
     float: left;
     font-size: 12px;
     font-family: 'Roboto';
@@ -737,6 +751,8 @@ body{
 .footer-bottom p{
     font-size: 11px;
     width: 80.8510638297%;
+    font-family: 'Roboto';
+    line-height: 23.5px;
 }
 
 .footer-top .right .menu-bottom .item{
