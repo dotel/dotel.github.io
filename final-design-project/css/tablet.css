@@ -91,10 +91,14 @@
     left: 70px;
 }
 
+.body-top-wrapper{
+    border-bottom: 1px solid #1e1e1e;
+}
 
 .body-top h2{
     font-size: 36px;
 }
+
 
 
 .right-menus .separator{

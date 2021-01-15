@@ -275,8 +275,6 @@ body{
 }
 
 
-
-
 .hero{
     transform: translateY(13px);
     height: 538px;
@@ -334,7 +332,6 @@ body{
     padding-right: 10px;
     padding-left: 10px;
     background-color: #2d2d2d;
-    border-bottom: 1px solid #1e1e1e;
 }
 .body-middle-wrapper{
     padding-right: 10px;
