@@ -109,7 +109,6 @@ body{
 
 .right-menus .item{
     float: left;
-    /* position: relative; */
 }
 .right-menus .item:hover a{
     color: rgb(88, 21, 155);
@@ -253,9 +252,7 @@ body{
 
 
 
-.header-bottom li:hover + li{
-    border-left: 0;
-}
+
 
 .header-bottom li a{
     text-decoration: none;
@@ -281,9 +278,8 @@ body{
 
 
 .hero{
-    transform: translateY(-13px);
+    transform: translateY(13px);
     height: 538px;
-    background-repeat: repeat-y;
     z-index: 8;
     margin-bottom: -13px;
     border-bottom: 1px solid #5b595c;

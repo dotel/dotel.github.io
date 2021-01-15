@@ -63,6 +63,9 @@
         position: static;
         height: 240px;
     }
+    .hero{
+        transform: translateY(-13px);
+    }
 }
 
 

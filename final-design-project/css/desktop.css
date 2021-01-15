@@ -15,6 +15,10 @@
     margin-right: 0;
 }
 
+.header-bottom li:hover + li{
+    border-left: 0;
+}
+
 
 .header-bottom li:hover{
     background: #fff;
