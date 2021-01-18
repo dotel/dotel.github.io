@@ -61,10 +61,10 @@
     .header-bottom{
         margin-top: 0;
         position: static;
-        height: 240px;
+        /* height: 240px; */
     }
     .hero{
-        transform: translateY(-13px);
+        /* transform: translateY(-13px); */
     }
 }
 
@@ -78,7 +78,6 @@
 .header-bottom li:nth-child(3), .header-bottom li:last-child{
     margin-right: 0;
 }
-
 
 
 

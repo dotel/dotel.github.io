@@ -1,0 +1,49 @@
+.carousel-container{
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-image-wrapper{
+    margin: 0 auto;
+}
+.carousel-image-wrapper img{
+    margin-right: -4px;
+}
+
+#left-button, #right-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 40px;
+}
+
+#right-button{
+    right: 0;
+}
+
+#image-control{
+    width: fit-content;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
+}
+
+#image-control .dot {
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
+    background-color: #000;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  #image-control .dot.selected{
+    background: transparent;
+  }

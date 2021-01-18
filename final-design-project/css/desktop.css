@@ -7,7 +7,14 @@
 }
 
 .header-bottom{
-    height: 113px;
+    z-index: 1000;    
+    position: relative;
+    top: 0;
+}
+
+.hero{
+    position: absolute;
+    /* width: 100%; */
 }
 .header-bottom li{
     width: calc(100%/6 - 1px);
