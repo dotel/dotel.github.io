@@ -1,4 +1,6 @@
+const FRAMES_PER_SEC = 60;
 let carouselMade = 1;
+const SLIDER_WIDTH = "90vw"
 function Carousel(imageWrapper, transitionTime, holdTime, imageMaxWidth){
     this.imageWrapper = imageWrapper;    
     this.transitionTime = transitionTime;
@@ -14,15 +16,13 @@ function Carousel(imageWrapper, transitionTime, holdTime, imageMaxWidth){
 
     this.currentContainer = this.carouselContainer.classList[1]
 
-    frames = 60;
-
-    this.transitionSpeed = imageMaxWidth*(1000/transitionTime)/frames;
+    this.transitionSpeed = imageMaxWidth*(1000/this.transitionTime)/FRAMES_PER_SEC;
     
     this.transitionSpeedFaster = this.transitionSpeed*6;
 
-    this.carouselContainer.style.maxWidth = imageMaxWidth + "px"
+    this.carouselContainer.style.maxWidth = `${imageMaxWidth}px`
     
-    this.carouselContainer.style.width = "90vw";
+    this.carouselContainer.style.width = SLIDER_WIDTH;
     
     this.imageWrapper.style.maxWidth = `${this.numberOfImages * 100}%` 
     this.imageWrapper.style.width = `${this.numberOfImages * 90}vw`
@@ -31,7 +31,7 @@ function Carousel(imageWrapper, transitionTime, holdTime, imageMaxWidth){
     this.images = document.querySelectorAll(`.${this.currentContainer} .carousel-image-wrapper img`)
     
     Array.from(this.images).forEach((img) =>{
-        img.style.width = "90vw";
+        img.style.width = SLIDER_WIDTH;
         img.style.maxWidth = imageMaxWidth + "px";
     })
 
@@ -51,11 +51,14 @@ function Carousel(imageWrapper, transitionTime, holdTime, imageMaxWidth){
     self.rightButton = document.createElement("img")
     self.imageControl = document.createElement("ul")
     
-    self.leftButton.src = "./images/keyboard_arrow_left-24px.svg"
-    self.rightButton.src = "./images/keyboard_arrow_right-24px.svg"
+
+    self.leftButton.setAttribute("src", "./images/keyboard_arrow_left-24px.svg")
+    self.rightButton.setAttribute("src", "./images/keyboard_arrow_right-24px.svg")
     
     self.leftButton.id = "left-button"
     self.rightButton.id = "right-button"
+
+
     self.imageControl.id = "image-control"
     
     this.carouselContainer.appendChild(self.leftButton)
@@ -67,6 +70,7 @@ function Carousel(imageWrapper, transitionTime, holdTime, imageMaxWidth){
      * Set up dots for image control
      */
     self.dots = []
+
     for(let i = 0; i < self.numberOfImages; i++){
         let dot = document.createElement("li");
         dot.classList = "dot"
@@ -82,10 +86,10 @@ function Carousel(imageWrapper, transitionTime, holdTime, imageMaxWidth){
      * Starts slide show until the mouse is hovered
      */
     
-    self.interval = setInterval(slideRight, holdTime + transitionTime);
+    self.interval = setInterval(slideRight, holdTime + self.transitionTime);
     
     function resumeSlides(){
-        self.interval = setInterval(slideRight, holdTime + transitionTime);
+        self.interval = setInterval(slideRight, holdTime + self.transitionTime);
         
     }
 
@@ -98,7 +102,6 @@ function Carousel(imageWrapper, transitionTime, holdTime, imageMaxWidth){
     {
         clearInterval(self.interval); // Clear the interval we set earlier
     }
-    
     
     
     
