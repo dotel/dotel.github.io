@@ -112,6 +112,7 @@ function Carousel(imageWrapper, transitionTime, holdTime, imageMaxWidth){
      * @param {*} negative 
      */
     function shiftWrapper(currentIndex, currentDot, negative){
+
         function shift(){
             let imgwrrapper = window.getComputedStyle(self.imageWrapper);
             
