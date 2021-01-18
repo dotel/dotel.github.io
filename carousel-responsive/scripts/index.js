@@ -82,22 +82,22 @@ function Carousel(imageWrapper, transitionTime, holdTime, imageMaxWidth){
      * Starts slide show until the mouse is hovered
      */
     
-    // self.interval = setInterval(slideRight, holdTime + transitionTime);
+    self.interval = setInterval(slideRight, holdTime + transitionTime);
     
-    // function resumeSlides(){
-    //     self.interval = setInterval(slideRight, holdTime + transitionTime);
+    function resumeSlides(){
+        self.interval = setInterval(slideRight, holdTime + transitionTime);
         
-    // }
+    }
 
-    // let slide = document.getElementsByClassName(self.carouselContainer.classList[1])[0];
+    let slide = document.getElementsByClassName(self.carouselContainer.classList[1])[0];
             
-    // slide.onmouseover = pauseSlides;
-    // slide.onmouseout = resumeSlides;
+    slide.onmouseover = pauseSlides;
+    slide.onmouseout = resumeSlides;
 
-    // function pauseSlides(event)
-    // {
-    //     clearInterval(self.interval); // Clear the interval we set earlier
-    // }
+    function pauseSlides(event)
+    {
+        clearInterval(self.interval); // Clear the interval we set earlier
+    }
     
     
     
