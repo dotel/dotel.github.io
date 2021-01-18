@@ -51,8 +51,8 @@ function Carousel(imageWrapper, transitionTime, holdTime, imageMaxWidth){
     self.rightButton = document.createElement("img")
     self.imageControl = document.createElement("ul")
     
-    self.leftButton.src = "../images/keyboard_arrow_left-24px.svg"
-    self.rightButton.src = "../images/keyboard_arrow_right-24px.svg"
+    self.leftButton.src = "./images/keyboard_arrow_left-24px.svg"
+    self.rightButton.src = "./images/keyboard_arrow_right-24px.svg"
     
     self.leftButton.id = "left-button"
     self.rightButton.id = "right-button"

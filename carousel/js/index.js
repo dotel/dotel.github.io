@@ -16,8 +16,8 @@ let numberOfImages = imageWrapper.childElementCount;
 
 imageWrapper.style.width = `${numberOfImages * 100}%` 
 
-leftButton.src = "../images/keyboard_arrow_left-24px.svg"
-rightButton.src = "../images/keyboard_arrow_right-24px.svg"
+leftButton.src = "./images/keyboard_arrow_left-24px.svg"
+rightButton.src = "./images/keyboard_arrow_right-24px.svg"
 
 leftButton.id = "left-button"
 rightButton.id = "right-button"
