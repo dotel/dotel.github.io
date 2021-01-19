@@ -39,12 +39,15 @@ function collideBalls(ball1,ball2) {
 
         var collisionAngle = Math.atan2(dy, dx);
 
+
+
         var speed1 = Math.sqrt(ball1.dx * ball1.dx +
             ball1.dy * ball1.dy);
         var speed2 = Math.sqrt(ball2.dx * ball2.dx +
         ball2.dy * ball2.dy);
 
-
+        
+        //Direction vectors to consider direction of balls
         var direction1 = Math.atan2(ball1.dy, ball1.dx);
         var direction2 = Math.atan2(ball2.dy, ball2.dx);
 

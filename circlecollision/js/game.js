@@ -2,11 +2,10 @@ import Ball from '../js/ball.js';
 
 import {canStartHere, doesItCollide, collide, collideBalls} from '../js/collisiondetection.js'
 export default class Game{
-    constructor(gameWidth, gameHeight){
+    constructor(gameWidth, gameHeight, numOfBalls){
         this.gameWidth = gameWidth;
         this.gameHeight = gameHeight;
-
-        this.numOfBalls = 15;
+        this.numOfBalls = numOfBalls;
         this.balls = [];
         
     }

@@ -10,7 +10,7 @@ export default class Ball{
         while(!this.overlap){
             this.x = this.radius * 2 + (Math.floor(Math.random()*game.gameWidth) - this.radius * 2);
             this.y = this.radius * 2 + (Math.floor(Math.random()*game.gameHeight) - this.radius * 2);
-            this.speed = 5;
+            this.speed = 3;
             this.angle = Math.floor(Math.random()*360);
             this.updateBallDirection();
             this.overlap = canStartHere(game.balls, this);

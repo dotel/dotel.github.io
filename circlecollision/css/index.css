@@ -2,3 +2,8 @@
     border: 2px solid black;
     background-color: rgb(90, 251, 243);
 }
+.ballcount{
+    padding: 10px 20px;
+    background-color: #dfdfdf;
+    display: inline-block;
+}
