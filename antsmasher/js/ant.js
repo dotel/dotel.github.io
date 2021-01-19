@@ -7,6 +7,8 @@ export default class Ant{
         this.gameHeight = game.gameHeight;
         this.overlap = false;
         this.radius = 30;
+        this.height = 50;
+        this.width = 50;
         this.mass = this.radius;
         while(!this.overlap){
             this.x = this.radius * 2 + (Math.floor(Math.random()*game.gameWidth) - this.radius * 2);
@@ -19,13 +21,11 @@ export default class Ant{
     }
 
     draw(ctx){
-        var cw = this.radius
-        var ch = this.radius
         ctx.drawImage(
             this.image,
             this.x,
             this.y, 
-            this.radius, this.radius
+            this.width, this.height
           );
     }
 
@@ -40,20 +40,6 @@ export default class Ant{
         this.y += this.dy;
     }
 
-    wallCollision(){
-        if (this.x + this.radius > this.gameWidth) {
-            this.dx = this.dx * -1;
-            this.x = this.gameWidth - this.radius;
-        } else if (this.x  < 0 ) {
-            this.dx = this.dx * -1;
-            this.x = this.radius;
-        } else if (this.y + this.radius > this.gameHeight ) {
-            this.dy = this.dy * -1;
-            this.y = this.gameHeight - this.radius;
-        } else if(this.y < 0) {
-            this.dy = this.dy * -1;
-            this.y = this.radius;
-            }
-    }
+    
 }
 

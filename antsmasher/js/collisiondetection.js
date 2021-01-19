@@ -8,12 +8,31 @@ function canStartHere(ants, ant) {
     return temp;
 }
 
+function wallCollision(ant){
+    //right wall
+    if (ant.x + ant.width > ant.gameWidth) {
+        ant.dx = ant.dx * -1;
+        ant.x = ant.gameWidth - ant.width;
+    } 
+    //Left wall 
+    else if (ant.x  < 0 ) {
+        ant.dx = ant.dx * -1;
+        ant.x = 0;
+    } else if (ant.y + ant.height > ant.gameHeight ) {
+        ant.dy = ant.dy * -1;
+        ant.y = ant.gameHeight - ant.height;
+    } else if(ant.y < 0) {
+        ant.dy = ant.dy * -1;
+        ant.y = 0;
+        }
+}
+
 function doesItCollide(ant1,ant2) {
     var temp = false;
-    var dx = ant1.x - ant2.x;
-    var dy = ant1.y - ant2.y;
-    var distance = (dx * dx + dy * dy);
-    if (distance <= Math.pow((ant1.radius + ant2.radius), 2) ) {
+    if(ant1.x + ant1.width >= ant2.x && 
+        ant1.x <= ant2.x + ant2.width && 
+        ant1.y + ant1.height >= ant2.height && 
+        ant1.y <= ant2.y + ant2.height){
         temp = true;
     }
     return temp;
@@ -21,13 +40,13 @@ function doesItCollide(ant1,ant2) {
 
 function collide(ants) {
         var ant;
-        var testAnt;
+        var otherAnt;
         for (var i = 0; i < ants.length; i++) {
             ant = ants[i];
             for (var j = i+1; j < ants.length; j++) {
-                testAnt = ants[j];
-                if (doesItCollide(ant,testAnt)) {
-                  collideAnts(ant,testAnt);
+                otherAnt = ants[j];
+                if (doesItCollide(ant,otherAnt)) {
+                  collideAnts(ant,otherAnt);
                 }
             }
         }
@@ -77,4 +96,4 @@ function collideAnts(ant1,ant2) {
         ant2.x += ant2.dy;
 }
 
-export {canStartHere, doesItCollide, collide, collideAnts}
+export {canStartHere, doesItCollide, collide, collideAnts, wallCollision}

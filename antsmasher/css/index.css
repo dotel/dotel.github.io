@@ -1,5 +1,8 @@
 .game-screen{
     border: 2px solid black;
+    background-color:rgb(203, 253, 241);
+  
+    cursor: url('../images/select.svg'), auto;	
 }
 
 img{
