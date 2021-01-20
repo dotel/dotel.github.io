@@ -48,7 +48,7 @@ export default class Game{
                     this.play()
                 }
             })
-
+            
         }
 
     update(){
@@ -113,7 +113,6 @@ export default class Game{
 
               }
 
-            // ctx.rect(0, 0, this.gameWidth, this.gameHeight);
             ctx.fillStyle = "rgba(0,0,0,.1)";
             ctx.fill();
       
