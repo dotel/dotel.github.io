@@ -1,0 +1,17 @@
+
+#gameScreen{
+    border: 2px solid black;
+    background: url('../assets/lane.jpeg');
+    background-size: cover;
+    cursor: url('../assets/select.svg'), auto;	
+}
+
+.lane{
+    display: none;
+}
+
+.maincar, .bluecar, .amo, .yellowcar, .orangecar2, .blackcar, .orangecar, .ambulance, .truck{
+    display: none;
+}
+
+
