@@ -78,6 +78,7 @@ export default class Game{
             ctx.font = "30px Arial";
             ctx.fillStyle = "white";
             ctx.textAlign = "right";
+            console.log(this.score)
             ctx.fillText(
               `Score: ${this.score}`,
               this.gameWidth,
