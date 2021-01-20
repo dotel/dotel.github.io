@@ -36,7 +36,9 @@ export default class Game{
             this.gameState = GAMESTATE.RUNNING;
             this.score = 0;
             for(let i = 0; i < 3; i++){
-                this.bots[i] = new Bot(this);
+                setTimeout(() => {
+                    this.bots[i] = new Bot(this);
+                }, 900* i)
             }
             this.soundflag = true;
             this.crashsoundflag = true;

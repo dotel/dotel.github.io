@@ -33,7 +33,9 @@ function bottomWallCollision(bots, game, bot){
     if(bot.y  >= game.gameHeight){
         const index = bots.indexOf(bot);
         bots.splice(index, 1);
-        bots.push(new Bot(game))
+        setTimeout(() => {
+            bots.push(new Bot(game))
+        }, 400)
         game.score++;
     }
 }
