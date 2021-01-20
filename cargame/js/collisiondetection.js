@@ -18,8 +18,8 @@ function canBotBeHere(bots, bot) {
 function doesItCollide(bot1, bot2){
     var temp = false;
     if(bot1.x == bot2.x) return true;
-    if (bot1.y < bot2.y + bot2.height + 40 &&
-        bot1.y + bot1.height - 40 > bot2.y) {
+    if (bot1.y < bot2.y + bot2.height &&
+        bot1.y + bot1.height > bot2.y) {
         temp = true;
     }
     return temp;
