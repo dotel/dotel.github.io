@@ -43,9 +43,10 @@ function bottomWallCollision(bots, game, bot){
 function collideCars(game){
     game.bots.forEach(bot => {
         if(playerCollision(bot, game.player)){
+            let highscore = localStorage.getItem("highscore");
+            highscore = game.score > highscore? game.score: highscore;
+            localStorage.setItem("highscore", highscore)
             game.gameState = GAMESTATE.GAMEOVER;
-            game.highscore = game.score;
-            localStorage.setItem("highscore", game.highscore)
         }
     })
 }

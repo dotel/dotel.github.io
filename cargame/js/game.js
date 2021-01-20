@@ -7,17 +7,21 @@ const GAMESTATE = {
     GAMEOVER: 3,
     NEWLEVEL: 4
   };
+const GAMESPEED = 10;
 export default class Game{
     constructor(gameWidth, gameHeight){
         this.gameWidth = gameWidth;
         this.gameHeight = gameHeight;
+        this.reset();
+    }
+    
+    reset(){
         this.player = new Player();
         this.gameState = GAMESTATE.MENU;
         this.laneHeight = 0;
-        this.gameSpeed = 10;
+        this.gameSpeed = GAMESPEED;
         this.bots = []
         this.score = 0;
-        this.highscore = 0;
         this.gameObjects = {"player": this.player, "bots" : this.bots};
         this.sound = document.getElementById("mainsound");
         this.crashsound = document.getElementById("crashsound") 
@@ -25,41 +29,40 @@ export default class Game{
         this.crashsoundflag = false;
         this.gamescreen = document.getElementById("gameScreen");
     }
-    
+
     start(){
         if (
-            this.gameState !== GAMESTATE.MENU &&
-            this.gameState !== GAMESTATE.GAMEOVER
+            this.gameState == GAMESTATE.MENU ||
+            this.gameState == GAMESTATE.GAMEOVER
             ){
-                return;
-            }
-            this.gameState = GAMESTATE.RUNNING;
-            this.score = 0;
-            for(let i = 0; i < 3; i++){
-                setTimeout(() => {
-                    this.bots[i] = new Bot(this);
-                }, 900* i)
-            }
-            this.soundflag = true;
-            this.crashsoundflag = true;
-            this.sound.play();
-            this.sound.addEventListener('timeupdate', function(){
-                var buffer = .40
-                if(this.currentTime > this.duration - buffer){
-                    this.currentTime = 0
-                    this.play()
+                this.gameState = GAMESTATE.RUNNING;
+                for(let i = 0; i < 3; i++){
+                    setTimeout(() => {
+                        this.bots[i] = new Bot(this, GAMESTATE);
+                    }, 900* i)
                 }
-            })
-            
+                this.soundflag = true;
+                this.crashsoundflag = true;
+                this.sound.play();
+                this.sound.addEventListener('timeupdate', function(){
+                    var buffer = .40
+                    if(this.currentTime > this.duration - buffer){
+                        this.currentTime = 0
+                        this.play()
+                    }
+                })
         }
-
+        
+        
+    }
+    
     update(){
         if(this.gameState == GAMESTATE.RUNNING){
             this.gameObjects["bots"].forEach(bot => bot.update());
             this.gamescreen.style.backgroundPositionY = `${this.laneHeight}px`;
             this.laneHeight += this.gameSpeed;
             if(this.score % 10 == 0 && this.score != 0)
-                this.gameSpeed += this.gameSpeed * .013
+                this.gameSpeed += this.gameSpeed * .013;
             }
     }
 
@@ -71,14 +74,13 @@ export default class Game{
         if(this.gameState === GAMESTATE.RUNNING){
             this.gamescreen.style.cursor = "none"
             this.gameObjects["bots"].forEach(bot => bot.draw(ctx));
-            ctx.rect(0, 0, this.gameWidth, this.gameHeight);
+            // ctx.rect(0, 0, this.gameWidth, this.gameHeight);
             ctx.fillStyle = "rgba(0,0,0,.1)";
             ctx.fill();
       
             ctx.font = "30px Arial";
             ctx.fillStyle = "white";
             ctx.textAlign = "right";
-            console.log(this.score)
             ctx.fillText(
               `Score: ${this.score}`,
               this.gameWidth,

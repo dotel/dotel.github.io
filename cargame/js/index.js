@@ -2,6 +2,9 @@ import Game from "./game.js"
 import {collideCars} from "./collisiondetection.js"
 import InputHanlder from "./inputhandler.js";
 
+
+
+
 const GAME_WIDTH = 600;
 const GAME_HEIGHT = 950;
 const PLAY_NOW_WIDTH = 220
@@ -25,7 +28,7 @@ function gameloop(){
     game.update();
     collideCars(game);
     game.draw(ctx);
-    requestAnimationFrame(gameloop)
+    var animation_id = requestAnimationFrame(gameloop)
 }
 
 gameloop();

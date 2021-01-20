@@ -4,7 +4,7 @@ let allBots = ["img_orangecar", "img_bluecar", "img_ambulance", "img_orangecar2"
         "img_truck", "img_yellowcar", "img_blackcar"]
 
 export default class Bot{
-    constructor(game){
+    constructor(game, GAMESTATE){
         this.game = game;
         this.bots = game.bots;
         this.image =  document.getElementById(allBots[parseInt(Math.random()*6)])
