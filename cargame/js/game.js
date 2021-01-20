@@ -17,11 +17,13 @@ export default class Game{
         this.gameSpeed = 10;
         this.bots = []
         this.score = 0;
+        this.highscore = 0;
         this.gameObjects = {"player": this.player, "bots" : this.bots};
         this.sound = document.getElementById("mainsound");
         this.crashsound = document.getElementById("crashsound") 
         this.soundflag = false;
         this.crashsoundflag = false;
+        this.gamescreen = document.getElementById("gameScreen");
     }
     
     start(){
@@ -32,6 +34,7 @@ export default class Game{
                 return;
             }
             this.gameState = GAMESTATE.RUNNING;
+            this.score = 0;
             for(let i = 0; i < 3; i++){
                 this.bots[i] = new Bot(this);
             }
@@ -50,9 +53,8 @@ export default class Game{
 
     update(){
         if(this.gameState == GAMESTATE.RUNNING){
-            this.gameObjects["player"].update();
             this.gameObjects["bots"].forEach(bot => bot.update());
-            document.getElementById("gameScreen").style.backgroundPositionY = `${this.laneHeight}px`;
+            this.gamescreen.style.backgroundPositionY = `${this.laneHeight}px`;
             this.laneHeight += this.gameSpeed;
             if(this.score % 10 == 0 && this.score != 0)
                 this.gameSpeed += this.gameSpeed * .013
@@ -65,7 +67,7 @@ export default class Game{
         this.gameObjects["player"].draw(ctx);
 
         if(this.gameState === GAMESTATE.RUNNING){
-            document.getElementById("gameScreen").style.cursor = "none"
+            this.gamescreen.style.cursor = "none"
             this.gameObjects["bots"].forEach(bot => bot.draw(ctx));
             ctx.rect(0, 0, this.gameWidth, this.gameHeight);
             ctx.fillStyle = "rgba(0,0,0,.1)";
@@ -77,12 +79,20 @@ export default class Game{
             ctx.fillText(
               `Score: ${this.score}`,
               this.gameWidth,
-              this.gameHeight
+              this.gameHeight - 30
             );
+            
+            let highscore = localStorage.getItem("highscore");
+            highscore = this.score > highscore? this.score: highscore;
+
+            ctx.fillText(
+                `High Score: ${highscore}`,
+                this.gameWidth,
+                this.gameHeight
+              );
         }
 
         if (this.gameState === GAMESTATE.MENU) {
-            ctx.rect(0, 0, this.gameWidth, this.gameHeight);
             ctx.fillStyle = "rgba(0,0,0,.3)";
             ctx.fill();
       
@@ -103,7 +113,7 @@ export default class Game{
 
               }
 
-            ctx.rect(0, 0, this.gameWidth, this.gameHeight);
+            // ctx.rect(0, 0, this.gameWidth, this.gameHeight);
             ctx.fillStyle = "rgba(0,0,0,.1)";
             ctx.fill();
       
@@ -111,10 +121,11 @@ export default class Game{
             ctx.fillStyle = "white";
             ctx.textAlign = "center";
             ctx.fillText(
-              `Game over. You scored ${this.score}`,
+              `Game over. You scored ${this.score}.`,
               this.gameWidth / 2,
               this.gameHeight / 2
             );
+
           }
     }
     

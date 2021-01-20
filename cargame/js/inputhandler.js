@@ -12,23 +12,21 @@ export default class InputHanlder{
                 game.start();
                 break;
           
-            case 'ArrowRight' :
-                case 'd':
-                if(game.player.x < 400)
-                game.player.moveRight();
-                break;
+                case 'ArrowRight' :
+                    case 'd':
+                    if(game.player.x < 400)
+                    game.player.moveRight();
+                    break;
 
-            case 'ArrowLeft':
-                case 'a':
-                if(game.player.x > 120)
-                game.player.moveLeft();
-                break;
-            case ' ':
-                if(game.gameState === GAMESTATE.GAMEOVER)
-                    {
-                        game.start();
-                    }
-                break;
+                case 'ArrowLeft':
+                    case 'a':
+                    if(game.player.x > 120)
+                    game.player.moveLeft();
+                    break;
+                case ' ':
+                    if(game.gameState === GAMESTATE.GAMEOVER)
+                    game.start();
+                    break;
             }
         })
     }

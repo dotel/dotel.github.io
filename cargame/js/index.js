@@ -38,8 +38,7 @@ canvas.addEventListener('click', (event) =>{
     if(x + PLAY_NOW_WIDTH/2 > GAME_WIDTH/2 && x + PLAY_NOW_WIDTH < GAME_WIDTH && 
         y + PLAY_NOW_HEIGHT/2 < GAME_HEIGHT/2 && y > GAME_HEIGHT/2 - PLAY_NOW_HEIGHT){
         game.start();
+        return;
     }  
-    else{
-        cursor = "url('../assets/select.svg'), auto"
-    }
+    cursor = "url('../assets/select.svg'), auto"
 })

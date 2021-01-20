@@ -18,10 +18,14 @@ function canBotBeHere(bots, bot) {
 function doesItCollide(bot1, bot2){
     var temp = false;
     if(bot1.x == bot2.x) return true;
-    if (bot1.y < bot2.y + bot2.height &&
-        bot1.y + bot1.height > bot2.y) {
+    
+    var tempBot2Height = bot2.height + 20;
+    var tempBot1Height = bot1.height + 20;
+    if (bot1.y < bot2.y + tempBot2Height &&
+        bot1.y + tempBot1Height > bot2.y) {
         temp = true;
     }
+
     return temp;
 }
 
@@ -36,8 +40,11 @@ function bottomWallCollision(bots, game, bot){
 
 function collideCars(game){
     game.bots.forEach(bot => {
-        if(playerCollision(bot, game.player))
+        if(playerCollision(bot, game.player)){
             game.gameState = GAMESTATE.GAMEOVER;
+            game.highscore = game.score;
+            localStorage.setItem("highscore", game.highscore)
+        }
     })
 }
 function playerCollision(bot, player){
