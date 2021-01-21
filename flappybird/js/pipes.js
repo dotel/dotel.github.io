@@ -9,8 +9,8 @@ export default class Pipe{
         this.gameHeight = gameHeight;
         this.topPipe = new Image();
         this.bottomPipe = new Image();
-        this.bottomPipe.src = "../assets/topipe.png";
-        this.topPipe.src = "../assets/bottompipe.png";
+        this.bottomPipe.src = "./../assets/topipe.png";
+        this.topPipe.src = "./../assets/bottompipe.png";
         this.gap = PIPE_HEIGHT + PIPE_GAP;
         this.width = 52;
         this.height = PIPE_HEIGHT;
