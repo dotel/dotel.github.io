@@ -9,7 +9,7 @@ export default class Bird{
         this.gameHeight = gameHeight;
         this.gameWidth = gameWidth;
         this.image = new Image();
-        this.image.src = "./../assets/birdnormal.png"
+        this.image.src = "assets/birdnormal.png"
         this.x = 20;
         this.y = 170;
         this.dy = 0;
