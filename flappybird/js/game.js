@@ -9,9 +9,9 @@ const GAMESTATE = {
 export default class Game{
     constructor(gameWidth, gameHeight){
         this.image = new Image();
-        this.image.src = "/flappybird/assets/background.png"
+        this.image.src = "../assets/background.png"
         this.bottomimage = new Image();
-        this.bottomimage.src = "/flappybird/assets/bottombackground.png"
+        this.bottomimage.src = "../assets/bottombackground.png"
         this.gameWidth = gameWidth;
         this.gameHeight = gameHeight;
         this.gameState = GAMESTATE.MENU;
