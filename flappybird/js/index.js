@@ -35,10 +35,10 @@ var toggleBirdDirection = true;
 
 setInterval(() => {
     if(toggleBirdDirection){
-        game.bird.image.src = "/assets/flappybird.png"
+        game.bird.image.src = "../assets/flappybird.png"
     }
     else{
-        game.bird.image.src = "/assets/birdnormal.png"
+        game.bird.image.src = "../assets/birdnormal.png"
     }
     toggleBirdDirection = !toggleBirdDirection;
 }, 500)
