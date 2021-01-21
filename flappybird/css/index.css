@@ -1,0 +1,104 @@
+.gamearea{
+    height: 800px;
+    width: 450px;
+    position: relative;
+    margin: 0 auto;
+}
+#gameScreen{
+    border: 2px solid black;
+}
+
+
+
+.coin, .score, .highscore, .play-button, .flappybird-text, 
+ .scoreimg, .startimg, .footerimg, .resultimg, .gameovertext{
+    display: none;
+}
+
+.menuimages.active .flappybird-text{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    cursor: pointer;
+    width: 300px;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.menuimages.active .scoreimg{
+    display: block;
+    position: absolute;
+    top: 73%;
+    right: 10%;
+    width: 100px;
+    cursor: pointer;
+    transform: translateY(-50%) translateX(-50%);
+}
+.menuimages.active .startimg{
+    display: block;
+    position: absolute;
+    top: 73%;
+    left: 30%;
+    width: 100px;
+    cursor: pointer;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.menuimages.active .footerimg{
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 300px;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.gameoverimages.active .gameovertext{
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 300px;
+    transform: translateY(-50%) translateX(-50%);
+}
+.gameoverimages.active .resultimg{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 300px;
+    transform: translateY(-50%) translateX(-50%);
+}
+.gameoverimages.active .startimg{
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 100px;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.gameoverimages.active .score{
+    display: block;
+    position: absolute;
+    top: 33%;
+    font-size: 22px;
+    color:rgb(87, 77, 77);
+    right: 24%;
+}
+.gameoverimages.active .highscore{
+    display: block;
+    position: absolute;
+    font-size: 22px;
+    top: 40%;
+    color:rgb(87, 77, 77);
+    right: 24%;
+}
+.running-score{
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-size: 36   px;
+    color: rgba(87, 77, 77);
+}
